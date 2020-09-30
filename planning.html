@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Borrador del Contenido</title>
+</head>
+<body>
+    <h1> CSS3: Estilos internos y Externos,Selectores CSS </h1>
+
+    <h2> Objetivo General </h2>
+        <p>Diseñar un OVI para el curso de diseños de sitios web a traves de CSS3: Estilos internos y Externos,Selectores CSS </p>
+
+    <h3> Objetivo Especificos </h3>
+
+        <ul>
+            <li>Que es CSS3</li>
+            <li>Definir las formas De Aplicar CSS3</li>
+            <li>Identificar los Selectores CSS3</li>
+        </ul>
+
+    
+    <h2> Objetivo General </h2>
+       <p>Fuentes de Información:
+        Significado.
+        https://www.ecured.cu/CSS3#:~:text=CSS3%20es%20un%20lenguaje%20usado,y%20por%20extensi%C3%B3n%20en%20XHTML).
+        Formas de aplicar CSS
+        https://www.aprenderaprogramar.com/
+        Selectores CSS
+        https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS</p>    
+
+
+    <h1> ¿ Que es ? </h1>
+
+    <p> CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML (y por extensión en XHTML). El W3C(World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.
+        La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación.
+        La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular mediante el atributo "style". </p>
+
+    <h2> FORMAS DE APLICAR CSS </h2>
+
+    <p> Ya hemos visto que existen estilos por defecto que aplican automáticamente los navegadores web cuando no hay estilos especificados, así como que podemos embeber código CSS en las propias etiquetas de HTML, “en línea”. Vamos a ver ahora dos formas adicionales de aplicar estilos CSS: en la parte inicial 
+        del documento HTML (aplicación de estilos interna o CSS interno) o en un archivo de extensión .css independiente del archivo HTML (aplicación de estilos externa o CSS externo). </p>
+
+    <h2> CSS INTERNO   </h2>
+
+    <p> Vamos a ver ahora cómo podemos definir esos estilos en la cabecera del documento HTML usando la siguiente sintaxis: </p>
+
+        <img src="imagenes/sintaxis.png"  alt="Sintaxis" >
+
+    <p> Las diferentes propiedades y valores se pueden poner en una misma línea o en distintas líneas según se prefiera (siempre separados mediante punto y coma). <br> 
+
+        Dentro de las etiquetas <head> … </head> incluiremos una etiqueta de apertura de declaración de estilos "style" type=”text/css”, "a" continuación colocaremos la definición de tantos estilos como deseemos y cerraremos la declaración con </"style">. En "HTML" 5 no es necesario especificar type =”text/css” pero de momento seguimos recomendando que se "use" esta sintaxis. </p>    
+
+    <h2> CSS EXTERNO   </h2>   
+    
+    <p> Aunque el CSS interno nos permite unificar en una declaración todos los estilos para un archivo html, seguimos teniendo el problema de tener que repetir la definición de estilos en la cabecera de cada uno de los archivos html de nuestro desarrollo web. Si el desarrollo tiene pocos archivos quizás sea menos problemático, pero cuando el desarrollo tiene cientos o miles de archivos sí se convierte en un verdadero problema, ya que cada vez que introdujéramos cambios habría que hacerlo en los cientos o miles de archivos de que constara el desarrollo.<br><br>
+
+        Para solventar esta solución se ideó la declaración externa de CSS, basada en declarar los estilos CSS en un archivo independiente que puede servir como referente para dotar de estilos a decenas, cientos o miles de archivos html, que únicamente deberán invocar el nombre de archivo utilizando una sintaxis específica. <br><br>De este modo un cambio en los estilos habrá que hacerlo únicamente en el archivo de estilos correspondiente, lo cual supone una gran ventaja. Incluso un cambio completo de los estilos de una página web se puede conseguir simplemente sustituyendo el archivo correspondiente.<br><br>
+        
+        Vamos a generar un archivo de estilos independiente. Para ello abre Notepad++ (o el editor de texto que estés usando) y crea un archivo con el siguiente contenido: </p>
+
+        <img src="imagenes/contenido.png"  alt="Contenido" >
+
+
+    <h2> Selectores CSS   </h2>   
+        
+        <h3> Selector de tipo </h3>
+
+            <p>Selecciona todos los elementos que coinciden con el nombre del elemento especificado.<br> 
+            Sintaxis: eltname<br> 
+            Ejemplo: input se aplicará a cualquier elemento input.</p>  
+            
+        <h3> Selector de clase </h3>
+    
+            <p>Selecciona todos los elementos que tienen el atributo de class especificado.<br> 
+                    Sintaxis: .classname<br> 
+                    Ejemplo: .index seleccionará cualquier elemento que tenga la clase "index"</p>  
+
+        <h3> Selector de ID </h3>
+
+             <p>Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento.<br> 
+                Sintaxis: #idname<br> 
+                Ejemplo: #toc se aplicará a cualquier elemento que tenga el ID "toc".</p> 
+
+        <h3> Selector universal </h3>
+
+             <p>Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.<br> 
+                Sintaxis: * ns|* *|*<br> 
+                Ejemplo: * se aplicará a todos los elementos del documento.</p>
+
+        <h3> Selector de atributo </h3>
+
+             <p>Selecciona elementos basándose en el valor de un determinado atributo.<br> 
+                Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]<br> 
+                Ejemplo: [autoplay] seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier valor).</p>
+
+
+
+       <h2> Mockup </h2>
+        <img src="imagenes/maquetacion.png"  alt="Maquetación" >
+
+
+
+    
+</body>
+</html> 
